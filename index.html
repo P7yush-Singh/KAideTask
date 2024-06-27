@@ -7,6 +7,7 @@
   <title>Kushal AIDE</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="Assest/logo.jpeg">
+  <link rel="stylesheet" href="Feature/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <script src="https://unpkg.com/scrollreveal"></script>
 </head>
@@ -274,8 +275,6 @@
            <label for="slide4"></label>
         </div>
      </div>
-
-     <!-- Progress Bar -->
      <h1 class="P-h1">Our Process</h1>
      <br> 
      <div class="process-wrapper">
@@ -426,44 +425,13 @@
     </div>
   </footer>
 
-
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
     integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="script.js"></script>
   <script src="https://unpkg.com/scrollreveal"></script>
-  <script>
-    $(".step").click( function() {
-	$(this).addClass("active").prevAll().addClass("active");
-	$(this).nextAll().removeClass("active");
-});
-
-$(".step01").click( function() {
-	$("#line-progress").css("width", "3%");
-	$(".discovery").addClass("active").siblings().removeClass("active");
-});
-
-$(".step02").click( function() {
-	$("#line-progress").css("width", "25%");
-	$(".strategy").addClass("active").siblings().removeClass("active");
-});
-
-$(".step03").click( function() {
-	$("#line-progress").css("width", "50%");
-	$(".creative").addClass("active").siblings().removeClass("active");
-});
-
-$(".step04").click( function() {
-	$("#line-progress").css("width", "75%");
-	$(".production").addClass("active").siblings().removeClass("active");
-});
-
-$(".step05").click( function() {
-	$("#line-progress").css("width", "100%");
-	$(".analysis").addClass("active").siblings().removeClass("active");
-});
-  </script>
 
 </body>
 
