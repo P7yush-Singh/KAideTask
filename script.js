@@ -54,3 +54,4 @@ ScrollReveal().reveal(".A-h1,.Acordino, .A-sc, .F, .S", { delay:2, scale: 2, res
   y: 12,
   z: 0
 } } );
+// Image Slider 
