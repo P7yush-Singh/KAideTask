@@ -9,6 +9,7 @@
 
 html {
   scroll-behavior: smooth;
+  scrollbar-width: none;
 }
 
 
@@ -168,7 +169,6 @@ header.Sticky .text {
   background-size: cover;
   width: 100vw;
   height: 100vh;
-  overflow-x: hidden;
 }
 
 .sidebar {
@@ -310,7 +310,7 @@ header ul li a:hover::before {
 
 
 /* Responsive */
-@media (max-width: 932px) {
+@media (max-width: 935px) {
   header .logo {
     width: 40px;
   }
@@ -333,6 +333,37 @@ header ul li a:hover::before {
     width: calc(100%);
     height: 96px;
   }
+
+  /* Contact Page Responsive */
+  .container-f form{
+    max-width: 600px;
+    max-height: 380px;
+  }
+  .container-f form input {
+    width: 260px;
+    height: 40px;
+    padding-left: 10px;
+    border: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+    background: none;
+    color: white;
+    border-bottom: 2px solid #fff;
+}
+  #contact .container-f form textarea {
+    background: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    font-weight: 200;
+    font-size: 12px;
+    padding: 10px;
+    outline: none;
+    min-width: 580px;
+    max-width: 580px;
+    min-height: 80px;
+    max-height: 80px;
+}
 }
 /* About Page */
 #About{
@@ -838,6 +869,10 @@ h4{
 }
 
 /* Contact Page */
+#contact{
+  width: 100%;
+  height: 100vh;
+}
 
 .container-f form{
   width: 720px;
@@ -861,7 +896,7 @@ h4{
 }
 
 .container-f form input{
-  width: 300px;
+  width: 260px;
   height: 40px;
   padding-left: 10px;
   outline: none;
@@ -1071,14 +1106,11 @@ textarea::-webkit-scrollbar-thumb{
   box-shadow: 0 0 5px 5px #57d92d;
 }
 
+@media (max-width: 900px) {
+  
+}
 
-@media (max-width: 450px) {
-  .topbar {
-    margin-top: 93%;
-    margin-left: 42%;
-    position: fixed;
-  }
-
+@media (max-width: 455px) {
   .hide {
     display: none;
   }
@@ -1086,4 +1118,36 @@ textarea::-webkit-scrollbar-thumb{
   .menu {
     display: block;
   }
+  header {
+    left: auto;
+    right: auto;
+    width: 75%;
+}
+  header .logo{
+    padding-left: 30px;
+  }
+  header.Sticky .logo {
+    width: 30px;
+}
+header .text {
+  font-size: 0.8rem;
+}
+  header.Sticky {
+        left: auto;
+        right: auto;
+        width: 70%;
+        margin-top: 20px;
+        background-color: rgb(35, 35, 35);
+    }
+    header.Sticky .text{
+      font-size: 0.8rem;
+    }
+    .content h2 {
+      font-size: 1.2rem;
+      color: #fed9b7;
+      padding-top: 65%;
+  }
+
+
+    /* Contact Page Responsive */
 }
