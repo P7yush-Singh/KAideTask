@@ -169,6 +169,7 @@ header.Sticky .text {
   background-size: cover;
   width: 100vw;
   height: 100vh;
+  overflow-x: hidden;
 }
 
 .sidebar {
@@ -308,63 +309,6 @@ header ul li a:hover::before {
   transform-origin: bottom right;
 }
 
-
-/* Responsive */
-@media (max-width: 935px) {
-  header .logo {
-    width: 40px;
-  }
-
-  header .text {
-    font-size: 1rem;
-  }
-
-  header ul li a {
-    font-size: 0.8rem;
-  }
-
-  .right .right-content img {
-    width: 280px;
-  }
-
-  .custom-shape-divider-bottom-1717836683 svg {
-    position: relative;
-    display: block;
-    width: calc(100%);
-    height: 96px;
-  }
-
-  /* Contact Page Responsive */
-  .container-f form{
-    max-width: 600px;
-    max-height: 380px;
-  }
-  .container-f form input {
-    width: 260px;
-    height: 40px;
-    padding-left: 10px;
-    border: none;
-    font-size: 15px;
-    margin-bottom: 10px;
-    background: none;
-    color: white;
-    border-bottom: 2px solid #fff;
-}
-  #contact .container-f form textarea {
-    background: none;
-    border: none;
-    border-bottom: 2px solid #fff;
-    color: #fff;
-    font-weight: 200;
-    font-size: 12px;
-    padding: 10px;
-    outline: none;
-    min-width: 580px;
-    max-width: 580px;
-    min-height: 80px;
-    max-height: 80px;
-}
-}
 /* About Page */
 #About{
   background-color: rgb(35, 35, 35);
@@ -869,10 +813,6 @@ h4{
 }
 
 /* Contact Page */
-#contact{
-  width: 100%;
-  height: 100vh;
-}
 
 .container-f form{
   width: 720px;
@@ -896,7 +836,7 @@ h4{
 }
 
 .container-f form input{
-  width: 260px;
+  width: 300px;
   height: 40px;
   padding-left: 10px;
   outline: none;
@@ -955,8 +895,7 @@ textarea::-webkit-scrollbar-thumb{
   font-weight: 600;
   font-size: 20px;
   color: #000;
-  width: 100px;
-  padding: 0;
+  padding: 0 20px;
   margin-right: 500px;
   margin-bottom: 30px;
   transition: 0.3s;
@@ -978,7 +917,6 @@ textarea::-webkit-scrollbar-thumb{
   background-repeat: no-repeat;
   max-width: 100%;
   flex-wrap: wrap;
-  padding-left: 2rem;
 }
 /* DownSide Arrow */
 .topbar{
@@ -1105,12 +1043,82 @@ textarea::-webkit-scrollbar-thumb{
   background-color: #31771a;
   box-shadow: 0 0 5px 5px #57d92d;
 }
+/* Responsive Part */
+@media (max-width: 932px) {
+  header .logo {
+    width: 40px;
+  }
 
-@media (max-width: 900px) {
+  header .text {
+    font-size: 1rem;
+  }
+
+  header ul li a {
+    font-size: 0.8rem;
+  }
+
+  .right .right-content img {
+    width: 280px;
+  }
+
+  .custom-shape-divider-bottom-1717836683 svg {
+    position: relative;
+    display: block;
+    width: calc(100%);
+    height: 96px;
+  }
+  
+  /* Contact Page */
+  .container-f form{
+    width: 580px;
+    height: 380px;
+    padding-left: 15px;
+  }
+  .container-f form h1{
+    font-size: 1.2rem;
+  }
+  .container-f form input{
+    width: 260px;
+    font-size: 14px;
+  }
+  .container-f form h4{
+    font-size: 1rem;
+  }
+  .container-f form textarea{
+    min-width: 530px;
+    max-width: 530px;
+  }
+}
+
+@media (max-width: 645px) {
+  .container-f form{
+    width: 400px;
+    height: 320px;
+  }
+  .container-f form h1{
+    font-size: 1rem;
+  }
+  .container-f form input{
+    width: 160px;
+  }
+  .container-f form h4{
+    font-size: 0.8rem;
+  }
+  .container-f form textarea{
+    min-width: 350px;
+    max-width: 350px;
+    min-height: 0;
+  }
   
 }
 
-@media (max-width: 455px) {
+@media (max-width: 450px) {
+  .topbar {
+    margin-top: 93%;
+    margin-left: 42%;
+    position: fixed;
+  }
+
   .hide {
     display: none;
   }
@@ -1118,36 +1126,23 @@ textarea::-webkit-scrollbar-thumb{
   .menu {
     display: block;
   }
-  header {
-    left: auto;
-    right: auto;
-    width: 75%;
-}
-  header .logo{
-    padding-left: 30px;
+  /* Contact Page */
+  .container-f form{
+    width: 330px;
+    height: 280px;
   }
-  header.Sticky .logo {
-    width: 30px;
-}
-header .text {
-  font-size: 0.8rem;
-}
-  header.Sticky {
-        left: auto;
-        right: auto;
-        width: 70%;
-        margin-top: 20px;
-        background-color: rgb(35, 35, 35);
-    }
-    header.Sticky .text{
-      font-size: 0.8rem;
-    }
-    .content h2 {
-      font-size: 1.2rem;
-      color: #fed9b7;
-      padding-top: 65%;
+  .container-f form h1{
+    font-size: 0.9rem;
   }
-
-
-    /* Contact Page Responsive */
+  .container-f form input{
+    width: 120px;
+  }
+  .container-f form h4{
+    font-size: 0.6rem;
+  }
+  .container-f form textarea{
+    min-width: 260px;
+    max-width: 260px;
+    min-height: 0;
+  }
 }
