@@ -918,14 +918,6 @@ textarea::-webkit-scrollbar-thumb{
   max-width: 100%;
   flex-wrap: wrap;
 }
-/* DownSide Arrow */
-.topbar{
-  display: block;
-  margin-top: 53%;
-  margin-left: 95%;
-  position: fixed;
-}
-
 /* Footer */
 .foot{
   background-color: rgb(35, 35, 35);
@@ -941,6 +933,11 @@ textarea::-webkit-scrollbar-thumb{
 }
 .foot-container{
   display: flex;
+}
+.foot-set-align{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 .foot-left, .foot-right{
   width: 50%;
@@ -1129,7 +1126,7 @@ textarea::-webkit-scrollbar-thumb{
   /* Contact Page */
   .container-f form{
     width: 330px;
-    height: 280px;
+    height: 330px;
   }
   .container-f form h1{
     font-size: 0.9rem;
@@ -1145,4 +1142,44 @@ textarea::-webkit-scrollbar-thumb{
     max-width: 260px;
     min-height: 0;
   }
+  /* Footer  */
+  .foot-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .foot-set-align{
+    display: flex;
+    flex-direction: row;
+  }
+  .foot-h1 {
+    margin-left: 30px;
+    font-size: 1rem;
+  }
+  .foot-right ul{
+    gap: 1.2rem;
+  }
+  .foot-mid{
+    padding-left: 30px;
+  }
+  .foot-mid-mid p{
+    font-size: 0.9rem;
+  }
+  .foot-mid ul{
+    gap: 1rem;
+    margin-bottom: 15px;
+  }
+  .foot-left-side{
+    width: 100%;
+  }
+  .foot-mid-mid {
+    width: 100%;
+    margin-left: 0;
+}
+.foot-color p, .foot-color a {
+  margin: 20px;
+  text-align: center;
+  width: auto;
+}
+.foot-color ul li a{
+  font-size: 0.9rem;
 }
