@@ -730,9 +730,10 @@ h4{
 
 /* Pricing Page */
 #pricing {
-  background-image: url(Assest/image.png);
+  background-image: url(Assest/apply-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   width: 100%;
   height: 100%;
 
@@ -750,7 +751,7 @@ h4{
   margin: 30px;
   width: 500px;
   height: 180px;
-  background-color: rgba(119, 245, 213, 1);
+  background-color: rgba(250, 245, 250, 0.15);
   text-align: center;
   border-radius: 20px;
   padding: 20px;
@@ -773,7 +774,7 @@ h4{
 }
 
 .plans:hover {
-  background-color: rgba(75, 17, 102, 0.877);
+  background-color: rgba(250, 250, 250, 0.30);
   transition: 0.5s;
   cursor: pointer;
   box-shadow: 5px 5px 20px rgb(243, 225, 250);
@@ -1076,6 +1077,15 @@ textarea::-webkit-scrollbar-thumb{
   .answer p{
     font-size: 1.1rem;
   }
+  /* Pricing Page */
+  .plans{
+    width: 400px;
+    height: 160px;
+    padding: 25px;
+  }
+  .plans p {
+    font-size: 1.1rem;
+  }
   
   /* Contact Page */
   .container-f form{
@@ -1114,6 +1124,18 @@ textarea::-webkit-scrollbar-thumb{
     font-size: 1.4rem;
   }
   .answer p{
+    font-size: 1rem;
+  }
+  /* Pricing Page */
+  .pricing{
+    padding: 0;
+  }
+  .plans{
+    width: 350px;
+    height: 150px;
+    padding: 25px;
+  }
+  .plans p {
     font-size: 1rem;
   }
   /* Contact Page */
@@ -1183,7 +1205,7 @@ textarea::-webkit-scrollbar-thumb{
   
 }
 
-@media (max-width: 450px) {
+@media (max-width: 455px) {
 
   .hide {
     display: none;
@@ -1212,6 +1234,20 @@ textarea::-webkit-scrollbar-thumb{
   .answer p{
     font-size: 0.9rem;
   }
+  /* Pricing Page */
+  .plans{
+    width: 250px;
+    height: 140px;
+    padding: 25px;
+  }
+  .plans p {
+    font-size: 0.9rem;
+  }
+  .plans:nth-child(1), .plans:nth-child(2), .plans:nth-child(3) {
+    align-self: center;
+  }
+  
+  
   /* Contact Page */
   .container-f form{
     width: 330px;
